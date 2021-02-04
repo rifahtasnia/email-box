@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-mail</title>
+    <link rel="stylesheet" type="text/css" href="tabstyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   <style>
+
+        .leftbar {
+            position: fixed;
+        }
+
+        .leftbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-top: 20px;
+            width: 80px;
+            background-color: #8f8f8f;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .leftbar li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            padding-top: 20px;
+        }
+
+
+        .leftbar li a:hover {
+            background-color: #1e90ff;
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            float: right;
+            padding: 6px 16px;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .icon-bar {
+            margin-left: 110px;
+        }
+
+        .icon-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .icon-bar li {
+            margin-top: 20px;
+            display: inline;
+            padding-right: 10px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="leftbar">
+        <ul>
+            <li><a href="#inbox"><img src="inbox.png" style="margin-left: 2px;"></a></li>
+            <li><a href="#sent"><img src="inbox.png" style="margin-left: 2px;"></a></li>
+            <li><a href="#bookmark"><i class="fa fa-star-o fa-3x" style="color:white"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="search-bar">
+        <input class="form-control me-2" type="search" placeholder="&#xF002; " style="font-family:Arial, FontAwesome"
+            aria-label="Search">
+    </div>
+
+    <div class="icon-bar">
+        <ul>
+            <li><i class="fa fa-pencil fa-2x"></i></li>
+            <li><i class="fa fa-reply fa-2x"></i></li>
+            <li><i class="fa fa-folder-open fa-2x"></i></li>
+            <li><i class="fa fa-trash fa-2x"></i></li>
+        </ul>
+    </div>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen"><img src="Image.png"> Henry Fox</button>
+        <button class="tablinks" onclick="openCity(event, '2')"><img src="Image.png"> Designmobo</button>
+        <button class="tablinks" onclick="openCity(event, '3')"><img src="Image.png"> Hey Designer</button>
+      </div>
+      
+      <div id="1" class="tabcontent">
+        <h3>Henry Fox</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      
+      <div id="2" class="tabcontent">
+        <h3>Last Chance to get start up Framework - 50% OFF!</h3>
+        <h4><i class="fa fa-star" style="color: #FFBF00;"></i> Designmobo</h4>
+        <img src="Image.png" style="size: 500px;">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">designmobo</a>
+              <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Exclusive deals</a>
+              <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">View in browser</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <h3>LAST DAY: 50% off Startup Framework</h3>
+                We offer you 50% off on Startup design framework
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+
+        <p></p> 
+      </div>
+      
+      <div id="3" class="tabcontent">
+        <h3>Hey Designer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
+</body>
+
+</html>
